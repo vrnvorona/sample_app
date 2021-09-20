@@ -1,0 +1,10 @@
+targets:
+  $default:
+    sources:
+      - lib/**
+      - pubspec.*
+      - $package$
+      # Allows the code generator to target files outside the lib folder
+      - test/**
+      # autotests
+      - integration_test/**.dart

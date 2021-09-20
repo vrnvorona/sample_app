@@ -1,0 +1,30 @@
+name: sample_app
+description: Sample with E2E and Widget Tests
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.3
+  provider: ^5.0.0
+
+dev_dependencies:
+  flutter_gherkin: # еще не в релизе
+    git:
+      url: https://github.com/jonsamwell/flutter_gherkin.git
+      ref: a9e8607f989b5833045d6163b7f98cbb5bced181
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  test: ^1.16.8
+  flutter_lints: ^1.0.0
+  build_runner: ^2.1.2
+
+flutter:
+  uses-material-design: true
