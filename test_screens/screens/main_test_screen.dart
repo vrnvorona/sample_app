@@ -18,10 +18,4 @@ abstract class MainTestScreen {
 
   /// кнопка перехода в избранное
   static Finder favoritesBtn = find.byKey(HomeTestKeys.favoritesBtn);
-
-  /// иконки добавления/удаления из избранного
-  static Finder addFavoritesIcon =
-      find.byWidgetPredicate((w) => w is Icon && w.icon == Icons.favorite_border);
-  static Finder removeFavoritesIcon =
-      find.byWidgetPredicate((w) => w is Icon && w.icon == Icons.favorite);
 }
